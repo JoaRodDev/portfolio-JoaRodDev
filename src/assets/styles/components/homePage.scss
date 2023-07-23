@@ -1,0 +1,11 @@
+.homePageContainter{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.backgroundColor{
+    color: $c-cianC;
+}
+

@@ -1,0 +1,100 @@
+//Imports fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Serif&family=Shrikhand&family=Yellowtail&display=swap');
+//font-family: 'Roboto Condensed', sans-serif;
+//font-family: 'Roboto Serif', serif;
+//font-family: 'Shrikhand', cursive;
+//font-family: 'Yellowtail', cursive;
+
+
+/* PALET COLORS */
+$c-cianC: #93D3C2;
+$c-cian: #93D3C2;
+$c-cianO: #14523D;
+$c-black: #020504;
+$c-white: #DBECE7;
+$c-green: #969082;
+$c-blue: #4183ed;
+
+/* FONTS */
+$f-especial: 'Shrikhand', cursive;
+$f-cursive: 'Yellowtail', cursive;
+$f-title: 'Roboto Condensed', sans-serif;
+$f-text: 'Roboto Serif', serif;
+
+/* SHADOWS */
+
+/* shadow basic */
+.shadowBasic{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  /* shadows on hover */
+  .shadowHover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  /* shadows windows */
+  .shadowWindows{
+    box-shadow: rgba(199, 199, 199, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(195, 195, 195, 0.2) 15px 15px, rgba(152, 152, 152, 0.1) 20px 20px, rgba(91, 91, 91, 0.05) 25px 25px;
+  }
+
+/* ETIQUETAS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $f-text;
+}
+
+/* Permite controlar el tamaño de fuente en rem: 1rem = 10px y fondo de la página */
+html {
+  font-size: 62.5%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+    background-size: 100%;
+  }
+h1{
+    font-size: 7rem;
+    font-family: $f-title;
+    color: $c-black;
+}
+  
+h2{
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: $c-black;
+}
+  
+h3{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: $c-black;
+}
+  
+h4{
+    font-size: 2.5rem;
+    font-family: 'Saira Condensed';
+    color: $c-black;
+}
+  
+h5{
+    font-size: 2rem;
+    font-family: 'Saira Condensed';
+    color: $c-black;
+}
+  
+p{
+    font-size: 1.8rem;
+    font-family: 'Signika Negative', sans-serif;
+    color: $c-black;
+}
+.especialText{
+    font-size: 5rem;
+    font-family: $f-especial;
+    color: $c-black;
+}
+.cursiveText{
+    font-size: 4rem;
+    font-family: $f-cursive;
+    color: $c-black;
+}

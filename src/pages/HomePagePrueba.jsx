@@ -136,7 +136,7 @@ export default function HomePagePrueba() {
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
-                  minHeight: 48,
+                  minHeight: 40,
                   justifyContent: open ? 'initial' : 'center',
                   px: 2.5,
                 }}

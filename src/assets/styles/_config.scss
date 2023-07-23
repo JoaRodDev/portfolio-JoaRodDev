@@ -5,15 +5,19 @@
 //font-family: 'Shrikhand', cursive;
 //font-family: 'Yellowtail', cursive;
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 /* PALET COLORS */
-$c-cianC: #93D3C2;
-$c-cian: #93D3C2;
-$c-cianO: #14523D;
-$c-black: #020504;
-$c-white: #DBECE7;
-$c-green: #969082;
-$c-blue: #4183ed;
+$c-background: #F2F1EC;
+$c-fonts: #3C353A;
+$c-cian: #ADBDB2;
+$c-green: #706E62;
+$c-greenO: #5C5663;
+$c-white: #ffffff;
+$c-black: #000000;
 
 /* FONTS */
 $f-especial: 'Shrikhand', cursive;
@@ -39,7 +43,7 @@ $f-text: 'Roboto Serif', serif;
 /* ETIQUETAS */
 * {
   margin: 0;
-  padding: 0;
+  padding: 5px 0px;
   font-family: $f-text;
 }
 
@@ -48,11 +52,14 @@ html {
   font-size: 62.5%;
   width: 100%;
   overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 body {
     background-size: 100%;
   }
+
 h1{
     font-size: 7rem;
     font-family: $f-title;

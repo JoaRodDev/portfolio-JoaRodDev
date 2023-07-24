@@ -1,13 +1,24 @@
 import React from 'react'
+import SideBar from '../components/SideBar';
+import { dividerClasses } from '@mui/material';
+import svg from "../../src/assets/img/programming-animate.svg"
 
-function HomePage() {
+function HomePagePrubaTwo() {
   return (
     <>
-        <div className='content-center homePageContainer'>
-            <h1 className='text-xs especialText text-center'>Hola Mundo</h1>
-        </div>
+      <div id="app" className="container-HomePage">
+        <SideBar/>
+          <section className='container-content'>
+            <header className='header-homePage'></header>
+            <h1 style={{ color: "white", marginLeft: "5rem" }}>
+              Pagina principal
+            </h1>
+            <img className='img-svg' src={svg}></img>
+          </section>
+      </div>
+      
     </>
-  )
+  );
 }
 
-export default HomePage;
+export default HomePagePrubaTwo

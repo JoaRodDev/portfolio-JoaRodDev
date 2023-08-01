@@ -1,29 +1,14 @@
 .container-HomePage{
     display: flex;
-    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 100%;
     background-color: $c-greenO;
 }
 
 .container-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
-.header-homePage{
-    height: 40%;
-    width: 100%;
-}
-
-.img-svg{
-    height: 500px;
-    width: 500px;
+    flex: 1; /* El contenido principal tomará todo el espacio restante */
+    padding: 20px;
 }
 
 .bg-filter{

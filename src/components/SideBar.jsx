@@ -23,17 +23,19 @@ function SideBar() {
                 >
                     {" "}
                 </MenuItem>
-                    <div className='container-img'>
-                        <img className='img-JoaRodDev' src={perfilImg} alt="imagen JoaRodDev"/>
-                    </div>
-                    <div className='sidebar-menuBody'>
-                        <MenuItem className='sidebar-menuItem' icon={<HomeOutlinedIcon className='sidebar-icon'/>}>Home</MenuItem>
-                        <MenuItem className='sidebar-menuItem' icon={<PeopleOutlinedIcon />}>Team</MenuItem>
-                        <MenuItem className='sidebar-menuItem' icon={<ContactsOutlinedIcon />}>Contacts</MenuItem>
-                        <MenuItem className='sidebar-menuItem' icon={<ReceiptOutlinedIcon />}>Profile</MenuItem>
-                        <MenuItem className='sidebar-menuItem' icon={<HelpOutlineOutlinedIcon />}>FAQ</MenuItem>
-                        <MenuItem className='sidebar-menuItem' icon={<CalendarTodayOutlinedIcon />}>Calendar</MenuItem>
-                    </div>
+                    <section className=''>
+                        <div className='container-img'>
+                            <img className='img-JoaRodDev' src={perfilImg} alt="imagen JoaRodDev"/>
+                        </div>
+                        <div className='sidebar-menuBody'>
+                            <MenuItem className='sidebar-menuItem' icon={<HomeOutlinedIcon className='sidebar-icon'/>}>Home</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<PeopleOutlinedIcon />}>Team</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<ContactsOutlinedIcon />}>Contacts</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<ReceiptOutlinedIcon />}>Profile</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<HelpOutlineOutlinedIcon />}>FAQ</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<CalendarTodayOutlinedIcon />}>Calendar</MenuItem>
+                        </div>
+                    </section>
             </Menu>
         </Sidebar>
   );

@@ -7,7 +7,7 @@ import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined" ;
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined" ;
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined" ;
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined" ;
-import perfilImg from "../../src/assets/img/perfil.png"
+import perfilImg from "../../src/assets/img/imgHeader.png"
 
 function SideBar() {
   const { collapseSidebar } = useProSidebar();
@@ -23,12 +23,13 @@ function SideBar() {
                 >
                     {" "}
                 </MenuItem>
-                    <section className=''>
-                        <div className='container-img'>
-                            <img className='img-JoaRodDev' src={perfilImg} alt="imagen JoaRodDev"/>
+                    <section className='container-infoSidebar'>
+                        <a href="#header"><div href="#header" className='container-img'>
+                            <img href="#header" type="button" className='img-JoaRodDev' src={perfilImg} alt="imagen JoaRodDev"/>
                         </div>
+                        </a>
                         <div className='sidebar-menuBody'>
-                            <MenuItem className='sidebar-menuItem' icon={<HomeOutlinedIcon className='sidebar-icon'/>}>Home</MenuItem>
+                            <MenuItem href='#presentation' className='sidebar-menuItem' icon={<HomeOutlinedIcon className='sidebar-icon'/>}>Home</MenuItem>
                             <MenuItem className='sidebar-menuItem' icon={<PeopleOutlinedIcon />}>Team</MenuItem>
                             <MenuItem className='sidebar-menuItem' icon={<ContactsOutlinedIcon />}>Contacts</MenuItem>
                             <MenuItem className='sidebar-menuItem' icon={<ReceiptOutlinedIcon />}>Profile</MenuItem>

@@ -6,9 +6,15 @@
     background-color: $c-greenO;
 }
 
+.cont-sideHome{
+    flex: 0;
+    position: fixed;
+}
+
 .container-content{
-    flex: 1; /* El contenido principal tomará todo el espacio restante */
-    padding: 20px;
+    flex: 1;
+    /* padding-left: 100px;
+    padding-right: 20px; */
 }
 
 .bg-filter{
@@ -43,3 +49,8 @@
     color: $c-background;
 }
 
+@media only screen and (max-width: 440px) {
+    .container-content{
+        padding-left: 100px;
+    }
+}

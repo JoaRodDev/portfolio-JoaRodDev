@@ -6,7 +6,6 @@ function Header2() {
   return (
     <>
       <header id="header" className='header-homePage'>
-
             <div class="container container_solid">
             <div class="title_wrapper">
                 <h1>The Great Outdoors</h1>

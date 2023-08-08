@@ -1,10 +1,11 @@
-/* .header-homePage{
+.header-homePage{
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-image: url("../");
 }
+
 .container-infoHeader{
     display: flex;
     flex-direction: row;
@@ -43,7 +44,7 @@
 }
 .container-imgHeader{
     width: 90%;
-    box-shadow: rgb(48, 149, 192) 0px 5px 50px 0px, rgba(71, 46, 184, 0.5) 0px 0px 0px 7px;
+    box-shadow: rgb(251, 251, 185) 0px 5px 50px 0px, rgba(251, 251, 185, 0.5) 0px 0px 0px 7px;
     border-radius: 50%;
     margin: 20px 0px;
 }
@@ -93,38 +94,38 @@
     .container-infoHeader{
         flex-direction: column;
         justify-content: center;
+        height: 100vh;
     }
     .info-header{
         width: 100%;
         margin-top: 60px;
-        height: 80%;
+        padding: 20px 0px;
+        height: 100%;
+        text-align: center;
     }
     .container-imgHeader{
-        width: 60%;
+        display: none;
     }
     .cont-imgCV{
-        align-items: center;
-        justify-content: space-around;
-        height: 100%;
-        width: 80%;
+        width: 100%;
     }
 }
 @media only screen and (max-width: 440px) {
     .header-homePage{
-        width: 80%;
+        padding: 10px 0px;
     }
     .container-infoHeader{
         width: 100%;
         padding-top: 100px;
     }
     .info-header{
-        font-size: 20px;
+        font-size: 30px;
         margin: 20px 0px;
         text-align: center;
         height: auto;
     }
     .strong-infoHeader{
-        font-size: 20px;
+        font-size: 30px;
     }
     .container-imgHeader{
         display: none;
@@ -132,88 +133,4 @@
     .container-imgHeader{
         width: 100%;
     }
-} */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
-
-header {
-  height: 200vh;
-}
-
-.container {
-  /* hide fixed overflow contents */
-  clip: rect(0, auto, auto, 0);
-
-  /* does not work if overflow = visible */
-  overflow: hidden;
-
-  /* only works with absolute positioning */
-  position: absolute;
-
-  /* Make sure containers are full-width and height */
-  height: 100vh;
-  left: 0;
-  width: 100%;
-  
-  
-  /* safari hack */
-  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
-}
-
-.container_solid {
-  background: white;
-  
-  /* position this container at the top of its parent element */
-  top: 0;
-}
-
-.title_wrapper {
-  position: fixed;
-  display: block;  
-  margin: auto;
-  width: 100%;
-  /* center the text wrapper vertically */
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.title_wrapper h1 {
-  text-align: center;
-  font-size: 64px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'Fraunces', serif;
-  font-weight: 900;
-}
-
-.container_solid .title_wrapper h1 {
-  /* the text background */
-  background: url(https://images.unsplash.com/photo-1575058752200-a9d6c0f41945?&q=85);
-  background-size: 100vw auto;
-  background-position: center;
-  
-  /* clip the text is possible */
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  
-  /* fallback text color */
-  color: black;
-}
-
-.container_image {
-  /* Grab a free image from unsplash */
-  background-image: url(https://images.unsplash.com/photo-1575058752200-a9d6c0f41945?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
-  background-size:100vw auto;
-  background-position: center;
-  background-attachment: fixed;
-  
-  /* position the second container below the first container */
-  top: 100vh;
-}
-
-.container_image .title_wrapper h1 {
-  color: white;
 }

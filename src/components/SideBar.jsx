@@ -1,13 +1,14 @@
 import React from 'react'
-import { Sidebar , Menu , MenuItem , useProSidebar } from "react-pro-sidebar" ;
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined" ;
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined" ;
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined" ;
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined" ;
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined" ;
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined" ;
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined" ;
+import { Sidebar , Menu , MenuItem , useProSidebar } from "react-pro-sidebar";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import perfilImg from "../../src/assets/img/imgHeader.png"
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import WorkOutlineRoundedIcon from '@mui/icons-material/WorkOutlineRounded';
+import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
+import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+
 
 function SideBar() {
   const { collapseSidebar } = useProSidebar();
@@ -23,18 +24,18 @@ function SideBar() {
                 >
                     {" "}
                 </MenuItem>
-                    <section className='container-infoSidebar'>
+                    <section>
                         <a href="#header"><div href="#header" className='container-img'>
                             <img href="#header" type="button" className='img-JoaRodDev' src={perfilImg} alt="imagen JoaRodDev"/>
                         </div>
                         </a>
                         <div className='sidebar-menuBody'>
-                            <MenuItem href='#presentation' className='sidebar-menuItem' icon={<HomeOutlinedIcon className='sidebar-icon'/>}>Home</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<PeopleOutlinedIcon />}>Team</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<ContactsOutlinedIcon />}>Contacts</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<ReceiptOutlinedIcon />}>Profile</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<HelpOutlineOutlinedIcon />}>FAQ</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<CalendarTodayOutlinedIcon />}>Calendar</MenuItem>
+                            <MenuItem href='#presentation' className='sidebar-menuItem' icon={<AccountCircleIcon sx={{ fontSize: 25 }}/>}>Sobre mi</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<WorkOutlineRoundedIcon sx={{ fontSize: 25 }} />}>Experiencia</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<SchoolOutlinedIcon sx={{ fontSize: 25 }} />}>Skills</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<StarOutlineOutlinedIcon sx={{ fontSize: 25 }} />}>Certificados</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<DesignServicesIcon sx={{ fontSize: 25 }} />}>Servicios</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<AlternateEmailOutlinedIcon sx={{ fontSize: 25 }} />}>Contacto</MenuItem>
                         </div>
                     </section>
             </Menu>

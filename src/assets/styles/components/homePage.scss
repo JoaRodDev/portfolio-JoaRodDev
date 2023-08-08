@@ -12,9 +12,10 @@
 }
 
 .container-content{
-    flex: 1;
-    /* padding-left: 100px;
-    padding-right: 20px; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 10px;
 }
 
 .bg-filter{
@@ -49,8 +50,18 @@
     color: $c-background;
 }
 
+@media only screen and (max-width: 982px) {
+    .container-content{
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .container-content{
+        margin-left: 15%;
+    }
+}
 @media only screen and (max-width: 440px) {
     .container-content{
-        padding-left: 100px;
+        margin-left: 23%;
     }
 }

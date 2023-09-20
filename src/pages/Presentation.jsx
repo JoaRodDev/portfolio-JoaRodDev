@@ -13,7 +13,7 @@ function Presentation() {
                 <h1 className='name-info'>
                     Joaquín Rodríguez
                 </h1>
-                <h4 id="specialization-info" className='specialization-info'>Development Frontend | Student Backend</h4>
+                <h4 id="specialization-info" className='specialization-info'> Desarrollador Frontend | Estudiante Backend</h4>
             </div>
             <div>
                 <p className='text-info'>Me considero una persona

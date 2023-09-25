@@ -29,7 +29,7 @@ function ListProyects() {
         <h3>CARGANDO...</h3>
     ) : (
         <>
-            <div className="productosContainer">
+            <div className="proyects_list">
                 {proyects.map((CardIterada) => {
                     return <CardProyect key={CardIterada.id} item={CardIterada}/>                   
                 })}

@@ -1,0 +1,43 @@
+/* Proyects */
+.container_proyects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* Item list */
+.proyects_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Cards */
+.card_proyect{
+    width: 400px;
+    height: 350px;
+    margin: 20px 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.card_proyect:hover{
+    box-shadow: rgba(199, 199, 199, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(195, 195, 195, 0.2) 15px 15px, rgba(152, 152, 152, 0.1) 20px 20px, rgba(91, 91, 91, 0.05) 25px 25px;
+    transition: 1s;
+    z-index: 10;
+    .cont_infoCard{
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(3px) contrast(40%);
+        padding: 0px 20px;
+    }
+}
+.cont_infoCard{
+    display: none;
+}

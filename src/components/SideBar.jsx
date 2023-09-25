@@ -31,7 +31,7 @@ function SideBar() {
                         </a>
                         <div className='sidebar-menuBody'>
                             <MenuItem href='#presentation' className='sidebar-menuItem' icon={<AccountCircleIcon sx={{ fontSize: 25 }}/>}>Sobre mi</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<WorkOutlineRoundedIcon sx={{ fontSize: 25 }} />}>Experiencia</MenuItem>
+                            <MenuItem className='sidebar-menuItem' icon={<WorkOutlineRoundedIcon sx={{ fontSize: 25 }} />}>Proyectos</MenuItem>
                             <MenuItem className='sidebar-menuItem' icon={<SchoolOutlinedIcon sx={{ fontSize: 25 }} />}>Skills</MenuItem>
                             <MenuItem className='sidebar-menuItem' icon={<StarOutlineOutlinedIcon sx={{ fontSize: 25 }} />}>Certificados</MenuItem>
                             <MenuItem className='sidebar-menuItem' icon={<DesignServicesIcon sx={{ fontSize: 25 }} />}>Servicios</MenuItem>

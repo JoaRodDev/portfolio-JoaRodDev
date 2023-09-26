@@ -5,9 +5,9 @@ function Proyects() {
   return (
     <section id='proyects' class="container_proyects">
       <div>
-        <div class="container-title">
-          <h2 class="" >Proyectos</h2>
-          <p>Proyectos profecionales y de formación</p>
+        <div class="container_title">
+          <h2 class="title_proyects" >Proyectos</h2>
+          <p className='subTitle_proyects'>Proyectos profecionales y de formación</p>
         </div>
         <div>
           < ListProyects />

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import ButtonSlide from '../../../components/ButtonSlide';
+import "./cardProyect.css"
+import { Link } from 'react-router-dom';
 
 export default function CardProyect(props) {
   const { id, category, description, github, technologies, title, image} = props.item
   const [colorState, setColorState] = useState("blue")
-  console.log(image)
   function handleClick(evt) {
     setColorState("green");
   }
@@ -15,11 +17,16 @@ export default function CardProyect(props) {
   };
 
   return (
-    <div className='card_proyect shadowHover' style={ cardImage }>
-      <div className='cont_infoCard'>
-        <h3>{title}</h3>
-        <button className='button-84'>Ver proyecto</button>
+    <div class="card">
+      <img src={image} alt="" />
+      <div class="card__content">
+        <p class="card__title">{title}</p>
+        <p class="card__description">{description}</p>
+        <Link to={`/proyect/${id}`}>
+          <ButtonSlide text="Ver Proyecto" />
+        </Link>
       </div>
     </div>
+
       );
 }

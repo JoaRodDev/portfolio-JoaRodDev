@@ -3,7 +3,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    padding: 100px 50px;
+}
+.container_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title_proyects{
+    font-family: $f-especial;
+    color: $c-yellow;
+    font-size: 100px;
+    margin: 20px 10px;
+    text-align: center;
+}
+.subTitle_proyects{
+    font-family: $f-text;
+    color: $c-cian;
+    font-size: 40px;
+    margin: 20px 10px;
+    text-align: center;
 }
 
 /* Item list */
@@ -15,29 +35,49 @@
     align-items: center;
     padding: 20px;
 }
-
-/* Cards */
-.card_proyect{
-    width: 400px;
-    height: 350px;
-    margin: 20px 40px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.cont_loaderCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
 }
-.card_proyect:hover{
-    box-shadow: rgba(199, 199, 199, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(195, 195, 195, 0.2) 15px 15px, rgba(152, 152, 152, 0.1) 20px 20px, rgba(91, 91, 91, 0.05) 25px 25px;
-    transition: 1s;
-    z-index: 10;
-    .cont_infoCard{
-        display: block;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        backdrop-filter: blur(3px) contrast(40%);
-        padding: 0px 20px;
+
+.title_cardProyect{
+    font-size: 25px;
+    font-family: $f-text;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .title_proyects{
+        font-size: 60px;
+    }
+    .subTitle_proyects{
+        font-size: 20px;
+    }
+    .container_proyects{
+        padding: 20px 10px;
     }
 }
-.cont_infoCard{
-    display: none;
+@media only screen and (max-width: 800px) {
+
+}
+@media only screen and (max-width: 440px) {
+    .container_proyects{
+        align-items: start;
+        justify-content: flex-start;
+    }
+    .proyects_list{
+        justify-content: start;
+        padding: 20px 0px;
+    }
+    .container_title{
+        justify-content: start;
+    }
+    .title_proyects{
+        font-size: 40px;
+    }
+    .subTitle_proyects{
+        font-size: 15px;
+    }
 }

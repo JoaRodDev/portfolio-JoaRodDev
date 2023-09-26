@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import CardProyect from './CardsProyects';
 import { proyectsCategory, proyectsDB } from '../../../data/Firebase';
+import LoaderCard from '../../../components/LoaderCard';
 
 function ListProyects() {
     const [proyects, setProyects] = useState([]);
@@ -25,19 +26,20 @@ function ListProyects() {
     },[categoryId]);
   return (
     <>
-    {isLoading ? (
-        <h3>CARGANDO...</h3>
-    ) : (
-        <>
-            <div className="proyects_list">
-                {proyects.map((CardIterada) => {
-                    return <CardProyect key={CardIterada.id} item={CardIterada}/>                   
-                })}
-            </div>
-        </>
-        )
-    }
-        
+        {isLoading ? (
+            <div className='cont_loaderCard'>
+                    <LoaderCard />
+                </div>
+        ) : (
+            <>
+                <div className="proyects_list">
+                    {proyects.map((CardIterada) => {
+                        return <CardProyect key={CardIterada.id} item={CardIterada}/>                   
+                    })}
+                </div>
+            </>
+            )
+        }
     </>
   )
 }

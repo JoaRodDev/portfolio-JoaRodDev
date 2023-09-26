@@ -8,6 +8,8 @@ function AppRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
+                <Route path='/category/:categoryId' element={<HomePage/>}/>
+                <Route path='/proyect/:id' element={<h1>DETALLE DEL PROYECTO</h1>}/>
                 <Route path='*' element={<h1>Pagina no disponible</h1>}/>
             </Routes>
         </BrowserRouter>

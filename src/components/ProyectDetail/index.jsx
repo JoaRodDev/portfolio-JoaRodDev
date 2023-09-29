@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProyect } from '../../data/Firebase';
-import ItemDetail from './ItemDetail';
+import ItemDetail from './itemDetail/ItemDetail';
 
 function ProyectDetail() {
   const [proyectDetail, setProyectDetail] = useState({title: "cargando..."});

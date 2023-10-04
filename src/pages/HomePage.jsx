@@ -3,6 +3,7 @@ import SideBar from '../components/SideBar';
 import Presentation from './Presentation';
 import Header from '../components/Header';
 import Proyects from './Proyects/Proyects';
+import Skills from './Skills';
 
 function HomePagePrubaTwo() {
   return (
@@ -13,6 +14,7 @@ function HomePagePrubaTwo() {
           <Header></Header>
           <Presentation />
           <Proyects/>
+          <Skills/>
         </section>
       </div>
       

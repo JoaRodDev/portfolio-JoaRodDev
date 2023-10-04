@@ -1,0 +1,37 @@
+.conteiner_skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    margin: 30px 0px;
+}
+.cont_titleSkills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px
+}
+.titleSkills{
+    font-size: 40px;
+    font-family: $f-especial;
+    color: $c-yellow;
+    text-align: center;
+    margin: 15px 0px;
+}
+.descriptionSkills{
+    font-size: 20px;
+    font-family: $f-text;
+    color: $c-cian;
+    text-align: center;
+    margin: 15px 0px;
+}
+.cont_cardsSkills{
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

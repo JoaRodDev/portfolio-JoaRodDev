@@ -1,7 +1,7 @@
-.card {
+.cont_cardProyect {
     position: relative;
     width: 400px;
-    height: 250px;
+    height: auto;
     background-color: #f2f2f2;
     border-radius: 10px;
     display: flex;
@@ -14,14 +14,14 @@
     margin: 20px 30px;
   }
   
-  .card img {
+  .cont_cardProyect img {
     width: 100%;
     height: 100%;
     fill: #333;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
-  .card:hover {
+  .cont_cardProyect:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
   }
@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -43,7 +44,7 @@
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
-  .card:hover .card__content {
+  .cont_cardProyect:hover .card__content {
     transform: rotateX(0deg);
   }
   
@@ -54,7 +55,7 @@
     font-weight: 700;
   }
   
-  .card:hover svg {
+  .cont_cardProyect:hover svg {
     scale: 0;
   }
   
@@ -64,16 +65,23 @@
     color: #777;
     line-height: 1.4;
   }
+  .cont_cardButtons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 
 @media only screen and (max-width: 800px) {
-    .card{
+    .cont_cardProyect{
         width: 100%;
         margin: 20px 10px;
     }
 }
 
 @media only screen and (max-width: 440px) {
-    .card{
+    .cont_cardProyect{
         margin: 20px 10px;
     }
     .card__title{

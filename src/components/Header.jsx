@@ -1,6 +1,7 @@
 import React from 'react'
 import imgHeader from "../assets/img/perfil.png"
 import LinksContact from './LinksContact'
+import MouseScroll from './MouseScroll'
 
 function Header() {
   return (
@@ -15,6 +16,8 @@ function Header() {
                   <a href="https://www.linkedin.com/in/joaquinrodriguez-dev"><img className='img-header' src={imgHeader} alt="" /></a>
                 </div>
                 <button className='button-86 buttonHeader'>Descargar CV</button>
+              </div>
+              <div>
               </div>
           </section>
           <LinksContact/>

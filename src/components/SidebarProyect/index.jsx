@@ -2,16 +2,14 @@ import React from 'react'
 import { Sidebar , Menu , MenuItem , useProSidebar } from "react-pro-sidebar";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import perfilImg from "../../assets/img/imgHeader.png"
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import WorkOutlineRoundedIcon from '@mui/icons-material/WorkOutlineRounded';
-import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
-import StarOutlineOutlinedIcon from '@mui/icons-material/StarOutlineOutlined';
-import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import HomeIcon from '@mui/icons-material/Home';
+import RocketIcon from '@mui/icons-material/Rocket';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from 'react-router-dom';
 
 
-function SidebarProyect() {
+function SidebarProyect(props) {
   const { collapseSidebar } = useProSidebar();
   return (
         <Sidebar className="container-sidebar">
@@ -32,14 +30,18 @@ function SidebarProyect() {
                             </div>
                         </Link>
                         <div className='sidebar-menuBody'>
-                            <Link to>
-                                <MenuItem href='#presentation' className='sidebar-menuItem' icon={<AccountCircleIcon sx={{ fontSize: 25 }}/>}>Sobre mi</MenuItem>
+                            <Link to={"/"}>
+                                <MenuItem className='sidebar-menuItem' icon={<HomeIcon sx={{ fontSize: 25 }} />}>Inicio</MenuItem>
                             </Link>
-                            <MenuItem className='sidebar-menuItem' icon={<WorkOutlineRoundedIcon sx={{ fontSize: 25 }} />}>Proyectos</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<SchoolOutlinedIcon sx={{ fontSize: 25 }} />}>Skills</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<StarOutlineOutlinedIcon sx={{ fontSize: 25 }} />}>Certificados</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<DesignServicesIcon sx={{ fontSize: 25 }} />}>Servicios</MenuItem>
-                            <MenuItem className='sidebar-menuItem' icon={<AlternateEmailOutlinedIcon sx={{ fontSize: 25 }} />}>Contacto</MenuItem>
+                            <Link to={props.proyect.deploy}>
+                                <MenuItem className='sidebar-menuItem' icon={<RocketIcon sx={{ fontSize: 25 }} />}>Deploy</MenuItem>
+                            </Link>
+                            <Link to={props.proyect.github}>
+                                <MenuItem className='sidebar-menuItem' icon={<GitHubIcon sx={{ fontSize: 25 }} />}>GitHub</MenuItem>
+                            </Link>
+                            <Link to={import.meta.env.VITE_REACT_APP_LINK_LINKEDIN}>
+                                <MenuItem className='sidebar-menuItem' icon={<LinkedInIcon sx={{ fontSize: 25 }} />}>Linkedin</MenuItem>
+                            </Link>
                         </div>
                     </section>
             </Menu>

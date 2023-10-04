@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import CardProyect from './CardsProyects';
-import { proyectsCategory, proyectsDB } from '../../../data/Firebase';
+import { proyectsCategory, proyectsDB } from '../../../data/firebase';
 import LoaderCard from '../../../components/LoaderCard';
 
 function ListProyects() {
@@ -24,6 +24,7 @@ function ListProyects() {
             .finally(()=> setIsLoading(false))
         } 
     },[categoryId]);
+    
   return (
     <>
         {isLoading ? (
@@ -34,7 +35,7 @@ function ListProyects() {
             <>
                 <div className="proyects_list">
                     {proyects.map((CardIterada) => {
-                        return <CardProyect key={CardIterada.id} item={CardIterada}/>                   
+                        return <CardProyect key={CardIterada.id} item={CardIterada}/>
                     })}
                 </div>
             </>

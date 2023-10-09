@@ -3,10 +3,15 @@ import "./tecnologyIcon.css"
 
 function TecnologyIcon(props) {
 
-    const {} = props.item
+    const {id, url, name} = props.item
 
   return (
-    <div>TecnologyIcon</div>
+    <div className='cont_techLogo'>
+        <div id={id} className='cont_img'>
+            <img src={url} alt={name}/>
+        </div>
+        <h4 className='nameTechnology'>{name}</h4>
+    </div>
   )
 }
 

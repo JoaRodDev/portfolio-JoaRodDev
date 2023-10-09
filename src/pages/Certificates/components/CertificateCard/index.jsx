@@ -1,5 +1,6 @@
 import React from 'react'
 import "./CertificatesCard.css"
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 
 function CerificateCard(props) {
 
@@ -12,6 +13,7 @@ function CerificateCard(props) {
             <div class="back">
             <div class="back-content">
                 <strong className='title_cardCertificated'>{name}</strong>
+                <WorkspacePremiumIcon sx={{ fontSize: 40 }} />
             </div>
             </div>
             <div class="front">

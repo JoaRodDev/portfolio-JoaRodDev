@@ -47,19 +47,13 @@
   .cont_cardProyect:hover .card__content {
     transform: rotateX(0deg);
   }
-  
-  .card__title {
+  .titleProyectCard {
     margin: 0;
     font-size: 24px;
     color: #333;
     font-weight: 700;
   }
-  
-  .cont_cardProyect:hover svg {
-    scale: 0;
-  }
-  
-  .card__description {
+  .descriptionProyectCard {
     margin: 10px 0 0;
     font-size: 14px;
     color: #777;
@@ -69,7 +63,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
     flex-direction: row;
   }
 
@@ -80,14 +74,28 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+  .card__content{
+    padding: 10px 5px;
+  }
+
+  .titleProyectCard{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .descriptionProyectCard{
+      font-size: 10px;
+      text-align: center;
+      margin-top: 5px;
+  }
+}
+
 @media only screen and (max-width: 440px) {
     .cont_cardProyect{
         margin: 20px 10px;
-    }
-    .card__title{
-        font-size: 14px;
-    }
-    .card__description{
-        font-size: 10px;
     }
 }

@@ -4,6 +4,7 @@ import Presentation from './Presentation';
 import Header from '../components/Header';
 import Proyects from './Proyects/Proyects';
 import Skills from './Skills';
+import Certificates from './Certificates';
 
 function HomePagePrubaTwo() {
   return (
@@ -15,6 +16,7 @@ function HomePagePrubaTwo() {
           <Presentation />
           <Proyects/>
           <Skills/>
+          <Certificates/>
         </section>
       </div>
       

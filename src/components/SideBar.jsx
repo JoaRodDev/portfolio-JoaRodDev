@@ -40,7 +40,7 @@ function SideBar() {
                             <a href='#skills'>
                                 <MenuItem className='sidebar-menuItem' icon={<SchoolOutlinedIcon sx={{ fontSize: 25 }} />}>Skills</MenuItem>
                             </a>
-                            <a href="#certificated">
+                            <a href="#certificates">
                                 <MenuItem className='sidebar-menuItem' icon={<StarOutlineOutlinedIcon sx={{ fontSize: 25 }} />}>Certificados</MenuItem>
                             </a>
                             <a href="#services">

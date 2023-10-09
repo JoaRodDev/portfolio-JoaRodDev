@@ -47,3 +47,27 @@ export async function proyectsCategory(categoryUrl){
     });
     return proyectsCategory;
 }
+
+export async function technologyDB(){
+    const technologyRef = collection(db, "technologyDB");
+    const snapshot = await getDocs(technologyRef)
+    
+    const technologyDB = snapshot.docs.map((elem) => {
+    let technology = elem.data()
+    technology.id = elem.id;
+    return technology;
+});
+    return technologyDB;
+}
+
+export async function certificatesDB(){
+    const certificatesRef = collection(db, "certificatesDB");
+    const snapshot = await getDocs(certificatesRef)
+    
+    const certificatesDB = snapshot.docs.map((elem) => {
+    let certificate = elem.data()
+    certificate.id = elem.id;
+    return certificate;
+});
+    return certificatesDB;
+}

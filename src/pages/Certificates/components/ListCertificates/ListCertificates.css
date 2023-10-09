@@ -1,0 +1,23 @@
+.cont_certificades{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    /* //overflow-x: scroll; */
+    overflow: scroll;
+    width: 100%;
+    /* overflow-x: auto; */ /* Hace que las tarjetas sean desplazables en la vista móvil */
+    scroll-snap-type: x mandatory; /* Obliga a desplazarse de una en una en el eje X */
+    -webkit-mask-image: linear-gradient(90deg, rgba(2,0,36,0) 4%, rgb(2, 0, 36) 16%, rgb(2, 0, 36) 89%, rgba(0,212,255,0) 100%);
+    overscroll-behavior-x: contain;
+    gap: var(--size-10);
+    align-items: start;
+    padding: 0px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .cont_certificades{
+        justify-content: start;
+    }
+}

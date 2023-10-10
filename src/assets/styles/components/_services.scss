@@ -1,0 +1,51 @@
+.container_services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.cont_infoServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.cont_infoServices h2{
+    color: $c-yellow;
+    font-family: $f-especial;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.cont_infoServices p{
+    color: $c-cian;
+    font-family: $f-title;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.cont_cardsServices{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 440px) {
+    .container_services{
+        padding: 20px 0px;
+    }
+    .cont_infoServices p{
+        font-size: 15px;
+    }
+}

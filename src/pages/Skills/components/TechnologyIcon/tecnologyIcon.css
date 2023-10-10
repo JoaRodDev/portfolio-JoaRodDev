@@ -1,6 +1,5 @@
 .cont_techLogo{
-    margin: 10px 10px;
-    padding: 10px;
+    margin: 2px 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,4 +15,14 @@
     font-size: 20px;
     text-align: center;
     margin: 10px;
+}
+
+@media only screen and (max-width: 440px) {
+    .cont_img{
+        width: 45px;
+        height: 45px;
+    }
+    .nameTechnology{
+        font-size: 15px;
+    }
 }

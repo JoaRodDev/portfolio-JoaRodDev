@@ -27,7 +27,7 @@
     font-family: $f-text;
     color: $c-cian;
     text-align: center;
-    margin: 15px 0px;
+    margin-bottom: 10px;
 }
 .cont_cardsSkills{
     padding: 30px 10px;
@@ -41,6 +41,10 @@
 @media only screen and (max-width: 440px) {
     .descriptionSkills{
         font-size: 15px;
+        padding: 0px 10px;
+    }
+    .titleSkills{
+        margin-bottom: 20px;
     }
     .conteiner_skills{
         padding: 10px 0px;

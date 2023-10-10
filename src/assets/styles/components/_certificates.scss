@@ -1,21 +1,22 @@
 .container_certificates{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px 30px;
+    height: 100vh;
 }
 
 .titleCertificates{
     text-align: center;
-    font-size: 40px;
+    font-size: 80px;
     font-family: $f-especial;
     color: $c-yellow;
     margin: 10px 0px;
 }
 .descriptionCertificates{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-family: $f-text;
     color: $c-cian;
     margin: 10px 0px;
@@ -26,12 +27,26 @@
     padding: 20px 10px;
 }
 
+@media only screen and (max-width: 600px) {
+    .cont_certificates{
+        padding: 20px 5px;
+    }
+    .titleCertificates{
+        font-size: 50px;
+    }
+    .descriptionCertificates{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
 @media only screen and (max-width: 440px) {
     .cont_certificates{
         padding: 20px 5px;
     }
     .titleCertificates{
-        font-size: 30px;
+        font-size: 40px;
+        margin-bottom: 10px;
     }
     .descriptionCertificates{
         font-size: 15px;

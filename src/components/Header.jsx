@@ -1,7 +1,6 @@
 import React from 'react'
 import imgHeader from "../assets/img/perfil.png"
 import LinksContact from './LinksContact'
-import MouseScroll from './MouseScroll'
 
 function Header() {
   return (

@@ -13,14 +13,14 @@ function Presentation() {
                 <h1 className='name-info'>
                     Joaquín Rodríguez
                 </h1>
-                <h4 id="specialization-info" className='specialization-info'> Desarrollador Frontend | Estudiante Backend</h4>
+                <h4 id="specialization-info" className='specialization-info'> Desarrollador Full Stack | Estudiante Data Science</h4>
             </div>
             <div>
                 <p className='text-info'>Me considero una persona
                     emprendedora y autodidacta, gracias a mi perfil obtuve aptitudes como adaptarme con facilidad a
                     proyectos y negocios, rápido aprendizaje, buena organización y trabajo en equipo.
                     Tengo sólidos conocimientos en populares herramientas de desarrollo ya que mi carrera fue
-                    influenciada por prestigiosos programas como Coderhouse, Domestika y Argentina Programa, Estoy
+                    influenciada por prestigiosos programas como Coderhouse, Domestika, Argentina Programa y actualmente el instituto Teclab. Estoy
                     en búsqueda de una nueva oportunidad laboral con la que pueda seguir impulsando mi carrera
                     académica y profesional.</p>
             </div>

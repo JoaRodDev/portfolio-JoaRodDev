@@ -6,7 +6,6 @@ function Services() {
     <section id='services' className='container_services'>
         <div className='cont_infoServices'>
             <h2>Servicios</h2>
-            <p>Te proporciono una visión de cómo puedo ayudarte a alcanzar tus objetivos y necesidades en el mundo digital. Mi enfoque se centra en ofrecer soluciones tecnológicas de alta calidad y creativas.</p>
         </div>
         <div className='cont_cardsServices'>
           <CardService 

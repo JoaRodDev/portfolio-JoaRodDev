@@ -6,6 +6,7 @@ import Proyects from './Proyects/Proyects';
 import Skills from './Skills';
 import Certificates from './Certificates';
 import Services from './Services';
+import Contact from './Contact';
 
 function HomePagePrubaTwo() {
   return (
@@ -19,6 +20,7 @@ function HomePagePrubaTwo() {
           <Skills/>
           <Certificates/>
           <Services/>
+          <Contact/>
         </section>
       </div>
       

@@ -1,14 +1,25 @@
 .cont_techLogo{
-    margin: 2px 3px;
+    margin: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
+    width: 30%;
+    height: 150px;
+}
+.cont_techLogo:hover{
+    transform: scale3d(1px);
+    transition: 1s;
 }
 .cont_img{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    margin: 10px 20px;
 }
+.cont_infoTech{
+    display: flex;
+    flex-direction: column;
+}
+
 .nameTechnology{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,6 +27,7 @@
     text-align: center;
     margin: 10px;
 }
+
 
 @media only screen and (max-width: 440px) {
     .cont_img{

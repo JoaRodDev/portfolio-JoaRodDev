@@ -4,6 +4,9 @@ import LoaderCard from '../../../../components/LoaderCard';
 import { technologyDB } from '../../../../data/firebase.js';
 import "./listTechnologies.css"
 import TecnologyIcon from '../TechnologyIcon';
+import { Accordion, AccordionDetails, AccordionSummary, Typography  } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+{/* <Accordion TransitionProps={{ unmountOnExit: true }} /> */}
 
 
 function ListTechnologies() {
